@@ -1,0 +1,13 @@
+@if (person$ | async; as person) {
+  <p-card header="Dati Anagrafici">
+    <div class="p-fluid">
+      <p><strong>Nome:</strong> {{ person.name }}</p>
+      <p><strong>Cognome:</strong> {{ person.surname }}</p>
+      <p><strong>Codice Fiscale:</strong> {{ person.taxCode }}</p>
+      <p><strong>Sesso:</strong> {{ person.sex }}</p>
+      <p><strong>Data di nascita:</strong> {{ person.birthDate | date }}</p>
+      <p><strong>Luogo di nascita:</strong> {{ person.birthPlace }}</p>
+      <p><strong>Provincia:</strong> {{ person.birthPlaceProvince }}</p>
+    </div>
+  </p-card>
+}
